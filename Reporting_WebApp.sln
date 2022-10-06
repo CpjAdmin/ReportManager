@@ -1,0 +1,70 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30128.74
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CP_Presentacion", "CP_Presentacion\CP_Presentacion.csproj", "{E6AACC82-E734-4604-9418-8DE3E6639371}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CP_AccesoDatos", "CP_AccesoDatos\CP_AccesoDatos.csproj", "{D0B13FE0-3B55-4BB4-B6EB-30E6772774E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CP_LogicaNegocio", "CP_LogicaNegocio\CP_LogicaNegocio.csproj", "{EF240290-0746-475A-991D-8EFEBC1486B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CP_Entidades", "CP_Entidades\CP_Entidades.csproj", "{CF76D01E-1D4E-4923-AAF6-D942CD6FACC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RM_WebAPI", "RM_WebAPI\RM_WebAPI.csproj", "{929D2E01-7AD4-4A42-AE30-8A8E2B6086CC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E6AACC82-E734-4604-9418-8DE3E6639371}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6AACC82-E734-4604-9418-8DE3E6639371}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6AACC82-E734-4604-9418-8DE3E6639371}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6AACC82-E734-4604-9418-8DE3E6639371}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0B13FE0-3B55-4BB4-B6EB-30E6772774E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0B13FE0-3B55-4BB4-B6EB-30E6772774E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0B13FE0-3B55-4BB4-B6EB-30E6772774E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0B13FE0-3B55-4BB4-B6EB-30E6772774E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF240290-0746-475A-991D-8EFEBC1486B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF240290-0746-475A-991D-8EFEBC1486B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF240290-0746-475A-991D-8EFEBC1486B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF240290-0746-475A-991D-8EFEBC1486B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF76D01E-1D4E-4923-AAF6-D942CD6FACC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF76D01E-1D4E-4923-AAF6-D942CD6FACC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF76D01E-1D4E-4923-AAF6-D942CD6FACC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF76D01E-1D4E-4923-AAF6-D942CD6FACC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{929D2E01-7AD4-4A42-AE30-8A8E2B6086CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{929D2E01-7AD4-4A42-AE30-8A8E2B6086CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{929D2E01-7AD4-4A42-AE30-8A8E2B6086CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{929D2E01-7AD4-4A42-AE30-8A8E2B6086CC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5FAF8344-A397-44F0-B354-0E24DDE93FD8}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://danubio/coopecajacollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = CP_Presentacion\\CP_Presentacion.csproj
+		SccProjectName1 = CP_Presentacion
+		SccLocalPath1 = CP_Presentacion
+		SccProjectUniqueName2 = CP_AccesoDatos\\CP_AccesoDatos.csproj
+		SccProjectName2 = CP_AccesoDatos
+		SccLocalPath2 = CP_AccesoDatos
+		SccProjectUniqueName3 = CP_LogicaNegocio\\CP_LogicaNegocio.csproj
+		SccProjectName3 = CP_LogicaNegocio
+		SccLocalPath3 = CP_LogicaNegocio
+		SccProjectUniqueName4 = CP_Entidades\\CP_Entidades.csproj
+		SccProjectName4 = CP_Entidades
+		SccLocalPath4 = CP_Entidades
+		SccProjectUniqueName5 = RM_WebAPI\\RM_WebAPI.csproj
+		SccProjectName5 = RM_WebAPI
+		SccLocalPath5 = RM_WebAPI
+	EndGlobalSection
+EndGlobal

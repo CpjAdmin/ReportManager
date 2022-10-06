@@ -1,0 +1,116 @@
+[
+  {
+    "outputFileName": "v0005/js/barra_progreso.min.js",
+    "inputFiles": [
+      "v0005/js/barra_progreso.js"
+    ]
+  },
+  {
+    "outputFileName": "v0005/js/login.min.js",
+    "inputFiles": [
+      "v0005/js/login.js"
+    ]
+  },
+  {
+    "outputFileName": "v0005/js/principal.min.js",
+    "inputFiles": [
+      "v0005/js/principal.js"
+    ]
+  },
+  {
+    "outputFileName": "v0005/js/publico.min.js",
+    "inputFiles": [
+      "v0005/js/publico.js"
+    ]
+  },
+  {
+    "outputFileName": "v0005/js/reportes.min.js",
+    "inputFiles": [
+      "v0005/js/reportes.js"
+    ]
+  },
+  {
+    "outputFileName": "v0005/js/usuarios.min.js",
+    "inputFiles": [
+      "v0005/js/usuarios.js"
+    ]
+  },
+  {
+    "outputFileName": "v0005/css/dataTables.checkboxes.min.css",
+    "inputFiles": [
+      "v0005/css/dataTables.checkboxes.css"
+    ]
+  },
+  {
+    "outputFileName": "v0005/css/error.min.css",
+    "inputFiles": [
+      "v0005/css/error.css"
+    ]
+  },
+  {
+    "outputFileName": "v0005/css/inicio.min.css",
+    "inputFiles": [
+      "v0005/css/inicio.css"
+    ]
+  },
+  {
+    "outputFileName": "v0005/css/principal_v1.min.css",
+    "inputFiles": [
+      "v0005/css/principal_v1.css"
+    ]
+  },
+  {
+    "outputFileName": "v0005/css/reporte.min.css",
+    "inputFiles": [
+      "v0005/css/reporte.css"
+    ]
+  },
+  {
+    "outputFileName": "v0005/css/login_v1.min.css",
+    "inputFiles": [
+      "v0005/css/login_v1.css"
+    ]
+  },
+  {
+    "outputFileName": "v0005/js/estadodecuenta_v2.min.js",
+    "inputFiles": [
+      "v0005/js/estadodecuenta_v2.js"
+    ]
+  },
+  {
+    "outputFileName": "v0005/css/general_v2.min.css",
+    "inputFiles": [
+      "v0005/css/general_v2.css"
+    ]
+  },
+  {
+    "outputFileName": "v0005/js/lista_reportes_v2.1.min.js",
+    "inputFiles": [
+      "v0005/js/lista_reportes_v2.1.js"
+    ]
+  },
+  {
+    "outputFileName": "v0005/js/perfiles_v2.1.min.js",
+    "inputFiles": [
+      "v0005/js/perfiles_v2.1.js"
+    ]
+  },
+  {
+    "outputFileName": "v0005/js/psbank_asociados_v2.2.min.js",
+    "inputFiles": [
+      "v0005/js/psbank_asociados_v2.2.js"
+    ]
+  },
+  {
+    "outputFileName": "v0005/js/estado_cuenta_td.min.js",
+    "inputFiles": [
+      "v0005/js/estado_cuenta_td.js"
+    ]
+  },
+  {
+    "outputFileName": "plugins/SweetAlert2-9.15.1/dist/sweetalert2.min.css",
+    "inputFiles": [
+      "plugins/SweetAlert2-9.15.1/dist/sweetalert2.css"
+    ]
+  }
+]

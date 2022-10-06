@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CP_Entidades.Departamento">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACBAAAAAAAAAAAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>Departamento.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CP_Entidades.Encriptar">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAIAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Encriptar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CP_Entidades.Perfil">
+    <Position X="11" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAACCAAAABAAACAAAEAEAAAAAAAAAAAAAAQAIBAAhA=</HashCode>
+      <FileName>Perfil.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CP_Entidades.Proceso">
+    <Position X="0.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAIAAAAAAAyAACGCAMAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Proceso.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CP_Entidades.Provincia">
+    <Position X="2.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>Psbanker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CP_Entidades.Canton">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAABAEAAA=</HashCode>
+      <FileName>Psbanker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CP_Entidades.Distrito">
+    <Position X="7.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAACAAAAAAAAAAAAAAAAAABAEAAA=</HashCode>
+      <FileName>Psbanker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CP_Entidades.Centro">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>Psbanker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CP_Entidades.Institucion">
+    <Position X="11.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAAAAAAABAAAAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>Psbanker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CP_Entidades.LugarTrabajo">
+    <Position X="13" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAAAAAAEBAAAAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>Psbanker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CP_Entidades.Asociado">
+    <Position X="12.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABCAAQAAAAIACgAAAIAAAEAAAAAAAAQAAAAAACAIA=</HashCode>
+      <FileName>Psbanker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CP_Entidades.CPC">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAQAAAAAAA=</HashCode>
+      <FileName>Psbanker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CP_Entidades.Subdirectorio">
+    <Position X="5.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAAAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Reporte.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CP_Entidades.Reporte">
+    <Position X="4" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAIAACAAAACBgAGAAAAQAQAIAAAAAAAAAIAAKAE=</HashCode>
+      <FileName>Reporte.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CP_Entidades.Rol">
+    <Position X="5.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAACAAAEAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Rol.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CP_Entidades.Sucursal">
+    <Position X="7.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAQAAAIACBAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Sucursal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CP_Entidades.Usuario">
+    <Position X="9.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQBAACAAAAAAAACAAQAAAAAAAAQAQAAEEA=</HashCode>
+      <FileName>Usuario.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

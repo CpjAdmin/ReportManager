@@ -1,0 +1,52 @@
+﻿/*Ubicación de Modal*/
+.modal-dialog {
+    position: absolute !important;
+    top: 45% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+}
+
+
+/*Poppup de Alerta*/
+.alert:not(#popup_content) {
+    position: absolute;
+    top: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    width: 600px;
+    text-align: left;
+    font-size: 14px;
+    z-index: 1100;
+    opacity: 0.9;
+    text-align: center
+}
+
+.tooltip {
+    width: 200px !important;
+}
+
+.form-group-todos input[type="checkbox"] {
+    display: none;
+}
+
+    .form-group-todos input[type="checkbox"] + .btn-group > label span {
+        width: 12px;
+    }
+
+        .form-group-todos input[type="checkbox"] + .btn-group > label span:first-child {
+            display: none;
+        }
+
+        .form-group-todos input[type="checkbox"] + .btn-group > label span:last-child {
+            display: inline-block;
+        }
+
+    .form-group-todos input[type="checkbox"]:checked + .btn-group > label span:first-child {
+        display: inline-block;
+    }
+
+    .form-group-todos input[type="checkbox"]:checked + .btn-group > label span:last-child {
+        display: none;
+    }

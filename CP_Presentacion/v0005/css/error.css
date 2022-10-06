@@ -1,0 +1,18 @@
+﻿.error-page {
+    margin-top: 150px;
+    font: normal 18px/28px Arial, sans-serif;
+    color: #2a3744;
+    text-align: center;
+}
+
+.error-page__header-image {
+    width: 250px;
+}
+
+.error-page__title {
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 45px;
+    width: 600px;
+}
+
+

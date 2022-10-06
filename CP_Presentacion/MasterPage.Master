@@ -1,0 +1,441 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="CP_Presentacion.MasterPage" ClientIDMode="Static" %>
+
+<%@ Register Assembly="Microsoft.ReportViewer.WebForms, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" Namespace="Microsoft.Reporting.WebForms" TagPrefix="rsweb" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Report Manager | COOPECAJA RL</title>
+
+    <%--Favicon--%>
+    <link rel="shorcut icon" type="image/x-icon" href="img/favicon/favicon.ico" />
+    <!-- Hacer al navegador Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+   
+    <!-- sweetAlert2 -->
+    <script type="text/javascript" src="plugins/SweetAlert2-9.15.1/dist/sweetalert2.min.js" ></script>
+    <link rel="stylesheet" href="plugins/SweetAlert2-9.15.1/dist/sweetalert2.min.css">
+
+    <!-- Bootstrap v3.3.7 -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" type="text/css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" type="text/css">
+    <!-- Style -->
+    <link rel="stylesheet" href="dist/v0005/css/AdminLTE.min.css" type="text/css">
+    <!-- Skins -->
+    <link rel="stylesheet" href="dist/v0005/css/skins/skin-black.min.css" type="text/css">
+    <!-- Alerts -->
+    <link rel="stylesheet" href="plugins/jAlert/jquery.alerts.css" type="text/css" />
+    <!-- Alerts Confirm -->
+    <link rel="stylesheet" href="plugins/jquery-confirm/jquery-confirm-master/dist/jquery-confirm.min.css">
+    <!-- DataTables -->
+    <link href="bower_components/datatables.net-bs/css/dataTables.bootstrap.css" rel="stylesheet" />
+    <!-- JQUERY UI -->
+    <link rel="stylesheet" href="bower_components/jquery-ui-1.12.1/jquery-ui.min.css" type="text/css">
+   
+    <!-- CSS Princpal -->
+    <link rel="stylesheet" href="v0005/css/principal_v1.min.css">
+    <!-- CSS General -->
+    <link rel="stylesheet" href="v0005/css/general_v2.min.css">
+
+    <!-- Google Font -->
+    <link rel="stylesheet" crossorigin href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+
+    <!-- jQuery 3 -->
+    <script src="bower_components/jquery/dist/jquery.min.js" type="text/javascript"></script>
+    <!-- jQuery UI -->
+    <%--<script src="plugins/jQueryUI/jquery-ui.min.js" type="text/javascript"></script>--%>
+    <script src="bower_components/jquery-ui-1.12.1/jquery-ui.min.js" type="text/javascript"></script>
+    <!-- Bootstrap 3.3.7 -->
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
+    <!-- AdminLTE App -->
+    <script src="dist/v0005/js/adminlte.js"></script>
+    <!-- jAlerts -->
+    <script src="plugins/jAlert/jquery.alerts.js" type="text/javascript"></script>
+    <!-- jAlerts Confirm -->
+    <script src="plugins/jquery-confirm/jquery-confirm-master/dist/jquery-confirm.min.js"></script>
+
+    <!-- DataTables -->
+    <%--<script src="bower_components/datatables.net/js/jquery.dataTables.js"></script>--%>
+    <script src="bower_components/datatables-buttons/v0005/jquery.dataTables10.15.min.js"></script>
+    <script src="bower_components/datatables.net-bs/js/dataTables.bootstrap.js"></script>
+
+    <!-- JS Publico -->
+    <script src="v0005/js/publico.min.js" type="text/javascript"></script>
+
+    <%--  HEAD - ContentPlaceHolder--%>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+
+<!--BODY-->
+<body class="hold-transition skin-black sidebar-mini sidebar-collapse">
+    <div class="wrapper">
+        <!--**************************************************************************************************************** INICIO DEL HEADER-->
+        <header class="main-header">
+            <!-- LOGO -->
+            <a href="Inicio.aspx" class="logo">
+                <!-- mini logotipo para la barra lateral mini 50x50 píxeles-->
+                <span class="logo-mini">
+                    <img src="img/logo_inicio.jpg" alt="COOPECAJA RL"></span>
+                <!-- LOGO para estado regular y dispositivos móviles-->
+                <span class="logo-lg">
+                    <img src="img/logo_inicio.jpg" alt="COOPECAJA RL"></span>
+            </a>
+            <!-- Barra de navegación del encabezado: el estilo se puede encontrar en header.less -->
+            <nav class="navbar navbar-static-top" style="box-shadow: 0px 3px 20px #4788d4;">
+                <!-- Botón de palanca de la barra lateral-->
+                <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+                    <span class="sr-only">Toggle</span>
+                </a>
+                <!-- Menú de la barra de navegación derecha -->
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+
+                        <!-- LINK:  Power BI-->
+                        <li class="dropdown user user-menu" style="height: 50px;">
+                            <a class="btn dropdown-toggle" data-toggle="dropdown">
+                                <img src="img/iconos/power_bi.png" class="user-image" alt="POWER BI">
+                                <span class="hidden-xs"><strong>POWER BI &nbsp;<span class="caret"></span></strong></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <%--Link a Página Web de Power BI--%>
+                                <li class="divider bg-blue-active"></li>
+                                <li class="nav-header center">
+                                    <a target="_blank" tabindex="0" href="https://app.powerbi.com">
+                                        <img src="img/iconos/power_bi.png" class="user-image" alt="POWER BI">Sitio Web de Power BI</a></li>
+                                <li class="divider bg-blue-active"></li>
+                                <%--Link - Informes de Power BI--%>
+                                <li class="dropdown-submenu nav-header center" runat="server" id="menuPBI">
+                                    <a class="subMenu" tabindex="0" href="#">
+                                        <img src="img/folder/2.png" class="user-image" alt="POWER BI">Informes de Power BI<span class="caret"></span></a>
+
+                                    <%--Submenu se ordena hacia abajo (principal) los otros hacia la derecha--%>
+                                    <ul class="dropdown-menu principal">
+
+                                        <%--Submenú Mesa de Servicio--%>
+                                        <li class="dropdown-submenu" runat="server" id="menuPBI_mesaservicio">
+                                            <a class="subMenu" tabindex="0" href="#">1 - Service Manager (Mesa de Servicio)<span class="caret"></span></a>
+
+                                            <ul class="dropdown-menu">
+                                                <li runat="server" id="li_menuPBI_mesaservicio_1" class="PBI"><a class="linkPBI" name="20" title="li_menuPBI_mesaservicio_1" href="#" tabindex="0" id="eyJrIjoiMzBmMDJkNWQtZDI5NS00M2MyLWJkNDEtOGNiM2VmODQ5NDc0IiwidCI6ImQ3ZTlhZGEwLWMxNDItNDIyZS1hNzU4LTNhNDM5ZmNlZDNhYSIsImMiOjR9"><span class="glyphicon glyphicon-stats"></span>&nbsp;CALIPSO-SYSTEMCENTER-HELPDESK</a></li>
+                                            </ul>
+                                        </li>
+                                        <%--Submenú Consejo Administración --%>
+                                        <li class="dropdown-submenu" runat="server" id="menuPBI_Consejo">
+                                            <a class="subMenu" tabindex="0" href="#">2 - Consejo Administración<span class="caret"></span></a>
+
+                                            <ul class="dropdown-menu">
+                                                <li runat="server" id="li_menuPBI_Consejo_1" class="PBI"><a class="linkPBI" name="21" title="li_menuPBI_Consejo_1" href="#" tabindex="0" id="eyJrIjoiMmVlZmM3ZjQtOTE4Yy00M2U0LWJhNjgtYzI1OGRiYzQ0ZWEzIiwidCI6IjBiMWIyNGNmLWNmMTctNDA0YS05YTllLTU3OGYwNWJlM2EyYSJ9"><span class="glyphicon glyphicon-stats"></span>&nbsp;SITUACIÓN ACTUAL</a></li>
+                                                <li runat="server" id="li_menuPBI_Consejo_2" class="PBI"><a class="linkPBI" name="22" title="li_menuPBI_Consejo_2" href="#" tabindex="0" id=""><span class="glyphicon glyphicon-stats"></span>&nbsp;ASOCIADOS</a></li>
+                                                <li runat="server" id="li_menuPBI_Consejo_3" class="PBI"><a class="linkPBI" name="23" title="li_menuPBI_Consejo_3" href="#" tabindex="0" id=""><span class="glyphicon glyphicon-stats"></span>&nbsp;CRÉDITOS</a></li>
+                                            </ul>
+                                        </li>
+                                        <%--Submenú PSBANKER --%>
+                                        <li class="dropdown-submenu" runat="server" id="menuPBI_Psbanker">
+                                            <a class="subMenu" tabindex="0" href="#">3 - Psbanker<span class="caret"></span></a>
+
+                                            <ul class="dropdown-menu">
+                                                <li runat="server" id="li_menuPBI_Psbanker_1" class="PBI"><a class="linkPBI" name="24" title="li_menuPBI_Psbanker_1" href="#" tabindex="0" id="eyJrIjoiMzA3NjA2OTEtYWJmMi00YjI0LTk4YjctYzIxMmQ5ZDQ5OTAxIiwidCI6IjBiMWIyNGNmLWNmMTctNDA0YS05YTllLTU3OGYwNWJlM2EyYSJ9"><span class="glyphicon glyphicon-stats"></span>&nbsp;NEPTUNO_BI_DWH_CREDITO</a></li>
+                                                <li runat="server" id="li_menuPBI_Psbanker_2" class="PBI"><a class="linkPBI" name="25" title="li_menuPBI_Psbanker_2" href="#" tabindex="0" id=""><span class="glyphicon glyphicon-stats"></span>&nbsp;NEPTUNO_BI_DWH_AHORRO</a></li>
+                                            </ul>
+                                        </li>
+                                        <%--Submenú QMATIC --%>
+                                        <li class="dropdown-submenu" runat="server" id="menuPBI_Qmatic">
+                                            <a class="subMenu" tabindex="0" href="#">4 - Qmatic<span class="caret"></span></a>
+                                            <ul class="dropdown-menu">
+                                                <li runat="server" id="li_menuPBI_Qmatic_1" class="PBI"><a class="linkPBI" name="26" title="li_menuPBI_Qmatic_1" href="#" tabindex="0" id="eyJrIjoiYzc4MjQ2YjYtMmVlNy00NGM3LWI4NGQtYmYwYzcwY2UyYmIxIiwidCI6ImQ3ZTlhZGEwLWMxNDItNDIyZS1hNzU4LTNhNDM5ZmNlZDNhYSIsImMiOjR9"><span class="glyphicon glyphicon-stats"></span>&nbsp;QMATIC #1</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- LINK:  CPC-->
+                        <li id="linkCPC" runat="server" class="dropdown user user-menu">
+                            <a id="btnCPCCambiarClave" name="CPC" data-target="#modal_cambiarClave" data-toggle="modal">
+                                <img src="img/iconos/cpc.png" class="user-image" alt="CPC">
+                                <span class="hidden-xs"><strong>CPC</strong></span>
+                            </a>
+                        </li>
+
+                        <!-- LINK:  CENDEISS-->
+                        <li id="linkCendeisss" runat="server" class="dropdown user user-menu">
+
+                            <a id="btnCENDEISSSCambiarClave" name="CENDEISSS" data-target="#modal_cambiarClave" data-toggle="modal">
+                                <img src="img/iconos/cendeisss.png" class="user-image" alt="SIC">
+                                <span class="hidden-xs"><strong>CENDEISSS</strong></span>
+                            </a>
+                        </li>
+
+                        <!-- LINK:  SIC-->
+                        <li id="linkSIC" runat="server" class="dropdown user user-menu">
+
+                            <a id="btnSICCambiarClave" name="SIC" data-target="#modal_cambiarClave" data-toggle="modal">
+                                <img src="img/iconos/sic.png" class="user-image" alt="SIC">
+                                <span class="hidden-xs"><strong>SIC</strong></span>
+                            </a>
+                        </li>
+
+                        <!-- LINK:  PSBANK-->
+                        <li class="dropdown user user-menu psbank">
+                            <a target="_blank" href="http://psbanker2:8000/Login.aspx">
+                                <img src="img/iconos/psbank.png" class="user-image" alt="PSBANK">
+                                <span class="hidden-xs"><strong>PSBANK</strong></span>
+                            </a>
+                        </li>
+
+                        <!-- CUENTA DE USUARIO: el estilo se puede encontrar en dropdown.less-->
+                        <li class="dropdown user user-menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <img src="img/usuario_rm.png" class="user-image" alt="User Image">
+                                <span id="nombreUsuario" class="hidden-xs"><%= Session["NombreUsuario"] %> </span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <!-- Imagen del usuario-->
+                                <li class="user-header">
+                                    <img src="img/usuario_rm.png" class="img-circle" alt="User Image">
+                                    <p>
+                                        <%= Session["NombreUsuario"] %>
+                                        <small><%= Session["DepartamentoUsuario"] %> </small>
+                                    </p>
+                                </li>
+
+                                <!-- Pie de página del menú-->
+                                <li class="user-footer">
+                                    <div class="pull-left">
+                                        <a id="btnRMCambiarClave" name="REPORT MANAGER" class="btn btn-default btn-flat" data-target="#modal_cambiarClave" data-toggle="modal">Cambiar Contraseña</a>
+                                    </div>
+                                    <div class="pull-right">
+                                        <%--  <asp:Button ID="btn_salir"  runat="server" Text="Salir"/>--%>
+                                        <a href="Login.aspx" class="btn btn-default btn-flat">Salir</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- Botón Sidebar Derecho -->
+                        <li runat="server" id="btnSidebarDerecho" class="btn-danger">
+                            <a id="btnConfiguracion" role="button" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- ****** FIN DEL HEADER-->
+
+        <!--INICIO content-wrapper ( Contiene el contenido de la página) -->
+        <div class="content-wrapper">
+
+            <%--Mensaje de Alerta--%>
+            <div class="center">
+                <div id="mensajesAlerta"></div>
+            </div>
+            <!--INICIO CONTENIDO PRINCIPAL-->
+            <section class="content">
+                <!-- **************************************************** FORM ******* -->
+                <form id="form1" runat="server">
+
+                    <!-- Sidebar - PANEL IZQUIERDO-->
+                    <aside class="main-sidebar" style="box-shadow: 0px 3px 5px #000000;">
+                        <!-- barra lateral: el estilo se puede encontrar en sidebar.less -->
+                        <section class="sidebar">
+                            <!-- Panel de usuario de la barra lateral -->
+                            <div class="user-panel">
+                                <div class="pull-left image">
+                                    <img src="img/usuario_rm.png" class="img-circle" alt="Foto de Usuario">
+                                </div>
+                                <div class="pull-left info">
+                                    <p runat="server" id="userSideBar"></p>
+                                    <a href="#"><i class="fa fa-circle text-success"></i>En Línea</a>
+                                </div>
+                            </div>
+                            <ul class="sidebar-menu" data-widget="tree">
+                                <!--INICIO DE MENU PRIMARIO DE REPORTES TREEVIEW-->
+                                <li class="header">
+                                    <div>
+                                        <h4><strong style="color: white">PANEL PRINCIPAL | </strong>Report Manager</h4>
+                                    </div>
+                                </li>
+
+                                <%--*********************************************Menú de Procesos--%>
+                                <li runat="server" id="MasterPage_menuProcesos" class="treeview">
+                                    <a>
+                                        <i class="fa fa-share"></i><span>MENÚ DE PROCESOS</span>
+                                        <span class="pull-right-container">
+                                            <i class="fa fa-angle-left pull-right"></i>
+                                        </span>
+                                    </a>
+                                    <ul class="treeview-menu" style="display: none;">
+                                        <li runat="server" id="li_menuProcesos_EstadoCuenta" class="MenuProcesos"><a class="link" href="Estados_de_Cuenta.aspx"><i class="fa fa-book"></i>Estados de Cuenta - Unificado</a></li>
+                                        <li runat="server" id="li_menuProcesos_EstadoCuenta_TD" class="MenuProcesos"><a class="link" href="Estados_de_Cuenta_TD.aspx"><i class="fa fa-book"></i>Estados de Cuenta - Ahorro Vista</a></li>
+                                        <li runat="server" id="li_menuProcesos_Perfiles" class="MenuProcesos"><a class="link" href="Perfiles.aspx"><i class="glyphicon glyphicon-list-alt"></i>Módulo de Perfiles</a></li>
+                                    </ul>
+                                </li>
+
+                                <%--**************************************Menú de Analisis de Datos--%>
+                                <%--   <li runat="server" id="MasterPage_menuAnalisisDatos" class="treeview">
+
+                                    <a style="border-left: 3px solid #3c8dbc">
+                                        <i class="fa fa-bar-chart"></i><span>MÓDULO DE ANÁLISIS</span>
+                                        <span class="pull-right-container">
+                                            <i class="fa fa-angle-left pull-right"></i>
+                                        </span>
+                                    </a>
+                                    <ul class="treeview-menu" style="display: none;">
+                                        <li runat="server" id="li_menuAnalisisDatos_AnalisisCredito" class="AnalisisInformacion"><a class="link" href="AnalisisCredito.aspx"><i class="fa fa-cube"></i>Análisis de Crédito</a></li>
+                                        <li runat="server" id="li_menuAnalisisDatos_AnalisisAhorros" class="AnalisisInformacion"><a class="link" href="AnalisisAhorros.aspx"><i class="fa fa-cube"></i>Análisis de Ahorros</a></li>
+                                    </ul>   
+                                </li>--%>
+
+                                <%--Lista de Reportes--%>
+                                <li runat="server" id="MasterPage_menuListaReportes" class="Reportes active">
+                                    <a href="ListaReportes.aspx">
+                                        <i class="fa fa-list-ol"></i><span>MÓDULO DE REPORTES</span>
+                                        <span class="pull-right-container">
+                                            <asp:Label ID="totalReportes" runat="server" Text="0" CssClass="label label-primary pull-right" Style="width: 40px; height: 20px; font-size: small;" />
+                                        </span>
+                                    </a>
+                                </li>
+
+                                <!-- ****************************************************************************************************************  MENÚ DE LA BARRA LATERAL: el estilo se puede encontrar en sidebar.less-->
+                                <%--  <asp:TreeView ID="TreeView1" runat="server" Width="347px" NodeWrap="True" ImageSet="XPFileExplorer" EnableClientScript="True">
+                                    <LeafNodeStyle VerticalPadding="1px" NodeSpacing="1px" CssClass="NodoHoja" />
+                                    <NodeStyle HorizontalPadding="1px" NodeSpacing="0px" VerticalPadding="2px" CssClass="NodoTransparente"></NodeStyle>
+                                    <ParentNodeStyle VerticalPadding="4px" CssClass="NodoPadre" />
+                                    <RootNodeStyle NodeSpacing="2px" CssClass="NodoRaiz" />
+                                </asp:TreeView>--%>
+                            </ul>
+                        </section>
+                        <!-- /.sidebar -->
+                    </aside>
+                    <!--FIN /.main-sidebar -->
+
+
+                    <div id="ContenidoPrincipal">
+
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                            <!-- CARGA EL DISEÑO DE LA PAGINA QUE HEREDA DE MASTERPAGE-->
+                        </asp:ContentPlaceHolder>
+
+                    </div>
+
+                    <%--Usuario ID--%>
+                    <asp:HiddenField ID="UsuarioID" runat="server" />
+                    <%--Login--%>
+                    <asp:HiddenField ID="Login" runat="server" />
+                    <%--ROL--%>
+                    <asp:HiddenField ID="Rol" runat="server" />
+                </form>
+            </section>
+            <!--FIN CONTENIDO PRINCIPAL-->
+        </div>
+        <!--FIN /.content-wrapper -->
+
+        <%--********************************************************************************** Modal Cambiar Clave #1 --%>
+        <div class="modal fade modal-centrado" id="modal_cambiarClave" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document" style="width: 450px;">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" tabindex="-1" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h5 class="modal-title text-danger" id="modalTituloCambiarClave"></h5>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label class="text-black">Contraseña Nueva:</label>
+                            <input id="ModalTxtClave1" type="password" class="form-control" maxlength="10" placeholder="Escriba la contraseña" onkeydown="BlodMayus(event,id)"
+                                data-toggle="tooltip" data-placement="right" data-trigger="manual" title="La tecla Bloq Mayús está activada." />
+                        </div>
+                        <div class="form-group">
+                            <label class="text-black">Confirmar Contraseña:</label>
+                            <input id="ModalTxtClave2" type="password" class="form-control" maxlength="10" placeholder="Vuelva a escribir la contraseña" onkeydown="BlodMayus(event,id)"
+                                data-toggle="tooltip" data-placement="right" data-trigger="manual" title="La tecla Bloq Mayús está activada." />
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="center">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <button type="button" class="btn btn-primary" id="btnModalClaveActualizar">Actualizar</button>
+                                    </td>
+                                    <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                    <td>
+                                        <button type="button" class="btn btn-danger" id="btnModalClaveCancelar">Cancelar</button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--INICIO FOOTER -->
+        <footer class="main-footer" style="box-shadow: 0px -3px 20px 0px #4788d4;">
+            <strong>Copyright &copy; 2018 <a target="_blank" href="http://www.coopecaja.fi.cr/">COOPECAJA RL</a></strong> Todos los derechos reservados.
+        </footer>
+        <!--FIN FOOTER -->
+
+        <!--***************************************************************************************** INICIO control Sidebar Derecho -->
+        <aside runat="server" id="sidebarDerecha" class="control-sidebar control-sidebar-dark">
+
+            <!-- Create the tabs -->
+            <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
+                <li class="active"><a href="#control-tap-mantenimiento" data-toggle="tab" aria-expanded="true"><i class="fa fa-wrench"></i></a></li>
+                <li class=""><a href="#control-tap-auditoria" data-toggle="tab" aria-expanded="false"><i class="fa fa-eye"></i></a></li>
+            </ul>
+
+            <!--*** Contenido de los Tab-->
+            <div class="tab-content">
+
+                <!-- Tab Manteniimento-->
+                <div class="tab-pane active" id="control-tap-mantenimiento">
+                    <h3 class="control-sidebar-heading">Mantenimiento R.M</h3>
+                    <%--Creación Menú Mantenimiento--%>
+                    <div id="menuMantenimiento" class="vertical-menu">
+                        <a class="active"><i class="glyphicon glyphicon-pencil"></i><span>Mantenimiento</span></a>
+                        <a class="link" href="Registro_Usuarios.aspx"><i class="glyphicon glyphicon-user"></i><span>Módulo de Seguridad</span></a>
+                        <a class="link" href="ListaReportes.aspx"><i class="glyphicon glyphicon-equalizer"></i><span>Módulo de Reportes</span></a>
+                        <a class="link" href="Perfiles.aspx"><i class="glyphicon glyphicon-list-alt"></i><span>Módulo de Perfiles</span></a>
+                    </div>
+                </div>
+
+                <div class="tab-pane" id="control-tap-auditoria">
+                    <!-- Tab Auditoría-->
+                    <h3 class="control-sidebar-heading">Integraciones R.M</h3>
+
+                    <%--Creación Menú Auditoría--%>
+                    <div id="menuAuditoria" class="vertical-menu">
+                        <a class="active"><i class="glyphicon glyphicon-eye-open"></i><span>AUDITORÍA</span></a>
+                        <a class="link" href="Reportes_Auditoria.aspx"><i class="glyphicon glyphicon-check"></i><span>Auditoría de Reportes</span></a>
+                        <a class="link" href="Backups_Auditoria.aspx"><i class="glyphicon glyphicon-check"></i><span>Auditoría de Respaldos</span></a>
+                    </div>
+                    <%--Creación Menú Integraciones--%>
+                    <div id="menuIntegracion" class="vertical-menu">
+                        <a class="active"><i class="glyphicon glyphicon-user"></i><span>APLICACIONES</span></a>
+                        <a class="link" href="CODA_Scripts.aspx"><i class="glyphicon glyphicon-check"></i><span>CODA ( Scripts )</span></a>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <!--FIN /.control-sidebar -->
+
+        <!-- Agrega el fondo de la barra lateral. Este div debe ser colocado inmediatamente después de la barra lateral de control -->
+        <div class="control-sidebar-bg"></div>
+    </div>
+    <!-- FIN ./wrapper -->
+
+    <!-- Principal -->
+    <script src="v0005/js/principal.min.js" type="text/javascript"></script>
+ 
+    <%-- Footer - ContentPlaceHolder--%>
+    <asp:ContentPlaceHolder ID="footer" runat="server">
+    </asp:ContentPlaceHolder>
+
+</body>
+</html>

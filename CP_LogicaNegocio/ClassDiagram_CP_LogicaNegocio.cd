@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CP_LogicaNegocio.DepartamentoLN">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAACAIAAEAAAAAAAAAAA=</HashCode>
+      <FileName>DepartamentoLN.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CP_LogicaNegocio.PerfilLN">
+    <Position X="0.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAAAAAAACAAAAAAAAAAEAAAQAAAAAAA=</HashCode>
+      <FileName>PerfilLN.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CP_LogicaNegocio.ProcesoLN">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAgAAAAAAAQAACAAAAAEAAAAAEAAAAA=</HashCode>
+      <FileName>ProcesoLN.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CP_LogicaNegocio.ProvinciaLN">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAQAAAAA=</HashCode>
+      <FileName>PsbankerLN.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CP_LogicaNegocio.CantonLN">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAEAAAAAAAEAAA=</HashCode>
+      <FileName>PsbankerLN.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CP_LogicaNegocio.DistritoLN">
+    <Position X="2.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAACAAAAAAAAAABAAEAAAAAAAAAAA=</HashCode>
+      <FileName>PsbankerLN.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CP_LogicaNegocio.CentroLN">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAAAAAAAAAIAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>PsbankerLN.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CP_LogicaNegocio.InstitucionLN">
+    <Position X="4" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAEAAAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>PsbankerLN.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CP_LogicaNegocio.LugarTrabajoLN">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAEAAAgAAAAAAA=</HashCode>
+      <FileName>PsbankerLN.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CP_LogicaNegocio.AsociadoLN">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEACAAAAAAAAA=</HashCode>
+      <FileName>PsbankerLN.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CP_LogicaNegocio.CPCLN">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAAQAAAAAAAAAAAIAAEAAAAAAAAAAA=</HashCode>
+      <FileName>PsbankerLN.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CP_LogicaNegocio.ReportesLN">
+    <Position X="5.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAGAAAAAAAAAAAEAAgIAAAAAEAAAAQAAAAEA=</HashCode>
+      <FileName>ReportesLN.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CP_LogicaNegocio.RolLN">
+    <Position X="0.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAgAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>RolLN.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CP_LogicaNegocio.SucursalLN">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAEAAIAAAAACAA=</HashCode>
+      <FileName>SucursalLN.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CP_LogicaNegocio.UsuarioLN">
+    <Position X="7.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAABYABAABAIAAAAAAAABCAAAQBAAAEEAAAAAAgAAg=</HashCode>
+      <FileName>UsuarioLN.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

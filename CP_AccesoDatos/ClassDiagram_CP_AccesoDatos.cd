@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CP_AccesoDatos.Conexion">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Conexion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CP_AccesoDatos.ConexionCendeisss">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Conexion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CP_AccesoDatos.ConexionGnosis">
+    <Position X="0.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Conexion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CP_AccesoDatos.ConexionOracle">
+    <Position X="2.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>Conexion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CP_AccesoDatos.DepartamentoDAO">
+    <Position X="5.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAgAAAAAAAACAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>DepartamentoDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CP_AccesoDatos.PerfilDAO">
+    <Position X="0.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAACAAAAAAAAAAEAAAQAAAAAAA=</HashCode>
+      <FileName>PerfilDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CP_AccesoDatos.ProcesoDAO">
+    <Position X="4" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAAAAAAAQAACAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>ProcesoDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CP_AccesoDatos.ProvinciaDAO">
+    <Position X="5.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAAAAAAACAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>PsbankerDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CP_AccesoDatos.CantonDAO">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAEAAIAAAAAAAA=</HashCode>
+      <FileName>PsbankerDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CP_AccesoDatos.DistritoDAO">
+    <Position X="7.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAQAAAAAAAAABAAEAAAAAAAAAAA=</HashCode>
+      <FileName>PsbankerDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CP_AccesoDatos.CentroDAO">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAAAAAAAAAAAAIAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>PsbankerDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CP_AccesoDatos.InstitucionDAO">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAEAAAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>PsbankerDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CP_AccesoDatos.LugarTrabajoDAO">
+    <Position X="5.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAFAAAAAAAAAAA=</HashCode>
+      <FileName>PsbankerDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CP_AccesoDatos.AsociadoDAO">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEACAAAAAAAAA=</HashCode>
+      <FileName>PsbankerDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CP_AccesoDatos.CPCDAO">
+    <Position X="4" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAQAAAAACAAAAAIAAEAAAAAAAAAAA=</HashCode>
+      <FileName>PsbankerDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CP_AccesoDatos.ReportesDAO">
+    <Position X="9.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAACAAAAAAAAAAAEAAgIAAAAAEBAAAQAAAAEA=</HashCode>
+      <FileName>ReportesDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CP_AccesoDatos.RolDAO">
+    <Position X="9.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAgAAAAAAAAgAEAAAAAAAAAAA=</HashCode>
+      <FileName>RolDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CP_AccesoDatos.SucursalDAO">
+    <Position X="2.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAFAAAAAAAACAA=</HashCode>
+      <FileName>SucursalDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CP_AccesoDatos.UsuarioDAO">
+    <Position X="7.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAYABAABAIAAAAAAAARAAAAQBAAAEEAAEAAAgAAg=</HashCode>
+      <FileName>UsuarioDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
